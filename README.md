@@ -15,10 +15,6 @@ I look into a how a wood treatment facility impacted a low-income neighborhood i
 
  Contains assets used for the scrollytelling portion of the story built with Scrollama. Graphics were created using Google Earth imagery, Adobe Illustrator and ai2html.
 
-<a href="https://ananyabchetia.github.io/contaminated/">
-  <img src="scrollytelling_images/readme_images/scrollytelling.png" alt="Scrollytelling visualization example" width="400">
-</a>
-
 ### 2. all_datasets
 
 ### Stores all dataset folders used in the reporting and analysis for this project:

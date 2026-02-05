@@ -3,3 +3,5 @@ static/assets/illustrator
 
 # Pacer documents
 static/assets/pacer-documents
+
+.env

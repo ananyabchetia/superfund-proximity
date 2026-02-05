@@ -5,7 +5,7 @@ I look into a how a wood treatment facility impacted a low-income neighborhood i
 
  This project examines a small community’s fight against a wood treatment facility that polluted groundwater and air, and released hazardous waste for decades in Eugene, Oregon.
 
- The reported story is published here: **[A guilty plea was just the beginning.](https://ananyabchetia.github.io/contaminated/)**
+ The reported story is published here: **[A guilty plea was just the beginning.](https://ananyabchetia.github.io/superfund-proximity/)**
 
  The project also investigates how many public schools are located within one mile of a Superfund site. This repository contains the data, analysis and code used to discover this.
 

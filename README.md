@@ -1,54 +1,57 @@
 # superfund-proximity
-I look into a how a wood treatment facility impacted a low-income neighborhood in Eugene, Oregon for decades. I found this story by joining datasets. For more about this piece, check out the story and repo here.
 
-## What is this story about?
+This project examines a small community’s fight against a wood treatment facility that polluted groundwater and air, and released hazardous waste for decades in Eugene, Oregon.
 
- This project examines a small community’s fight against a wood treatment facility that polluted groundwater and air, and released hazardous waste for decades in Eugene, Oregon.
+The reported story is published here: **[A guilty plea was just the beginning.](https://ananyabchetia.github.io/superfund-proximity/)**
 
- The reported story is published here: **[A guilty plea was just the beginning.](https://ananyabchetia.github.io/superfund-proximity/)**
-
- The project also investigates how many public schools are located within one mile of a Superfund site. This repository contains the data, analysis and code used to discover this.
+The project also has an interactive mapping tool and investigates how many public schools are located within one mile of a Superfund site. This repository contains the data, analysis and code used to discover this.
 
 ## File structure
 
-### 1. scrollytelling_images
+### 1. src:
 
- Contains assets used for the scrollytelling portion of the story built with Scrollama. Graphics were created using Google Earth imagery, Adobe Illustrator and ai2html.
+a. data : contains raw and processed data.
 
-### 2. all_datasets
+b. google-maps-api : contains html for my interactive mapping tool
 
-### Stores all dataset folders used in the reporting and analysis for this project:
+c. graphics : contains html for responsive graphics plus svg files.
 
-#### a. FOIA - Public records of odor complaints from the wood treatment facility in Eugene, Oregon.
+d. jupyter-notebooks : contains three notebooks.
 
-#### b. PDFs_of_superfunds - EPA PDFs listing proposed and active Superfund sites.
+1. clean-public-records : cleans public records data
 
-#### c. Superfund_list_csv - CSV files generated from the EPA Superfund PDFs. These cleaned files can be used directly instead of scraping the PDFs.
+2. merge-schools-superfunds : joins public school dataset with superfund dataset via buffering method.
 
-#### d. public_school_dataset - Excel file containes public school locations across the United States and a derived CSV showing that nearly 1,800 public schools are located within one mile of a Superfund site.
+3. analysis-on-schools : contains R analysis on what type of schools are located near superfund sites (low-income, racial demographic, etc.)
 
-### 3. Google_Maps_API
+### 2. assets
 
-#### This folder contains an interactive Google Maps API–powered tool that lets users evaluate environmental risk by measuring the proximity of schools and homes to Superfund sites. Scroll down and find this tool at the end of this **[story](https://ananyabchetia.github.io/contaminated/)**.
+a. scrollytelling : contains scrollytelling png's and .gitignore files.
 
-#### Note: This interactive component was added after the story was published in March.
+### 3 templates
 
-#### Important: The tool cannot be run locally, as it relies on a Google Maps API key that is restricted to my website for security reasons.
+a. contains scrollytelling htmls for responsive design.
 
 ## Workflow
 
-### 1. first_notebook.ipynb:
+#### Check out the jupyter notebooks for analysis:
 
-#### Uses geospatial analysis to identify public schools located within one mile of Superfund sites.
+1. merge-schools-superfunds.ipynb:
 
-#### Specifically uses GeoPandas for spatial operations, reprojects geometries to EPSG:5070 and applies a one-mile buffer to calculate proximity.
+   Uses geospatial analysis to identify public schools located within one mile of Superfund sites.
 
-### 2. second_notebook.ipynb:
+   Specifically uses GeoPandas for spatial operations, reprojects geometries to EPSG:5070 and applies a one-mile buffer to calculate proximity.
 
-#### Cleans FOIA-requested complaint data and formats it for a Datawrapper visualization.
+2. analysis-on-schools.ipynb:
+
+   Analysis on what type of schools are located near Superfund sites. Are they low-income? Which state has the most schools near these hazardous sites? Analysis was done on R.
+
+3. clean-public-records.ipynb:
+
+   Cleans FOIA-requested complaint data and formats it for a Datawrapper visualization.
 
 ## Final
 
-### This story involved reading dozens of court records, filing public records requests, interviewing vulnerable sources and combining data with in-depth reporting. (And yes, all under a tight deadline.)
+This story involved reading dozens of court records, filing public records requests, interviewing vulnerable sources and combining data with in-depth reporting. (And yes, all under a tight deadline.)
 
-### If you’re interested to learn more about the reporting side, check it out **[here](story.md)**.
+Reach me at ananyabchetia@gmail.com to learn more.
